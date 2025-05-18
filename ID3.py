@@ -37,7 +37,6 @@ class ID3DecisionTree:
 
 
     def fit(self, X, y):
-        print(self.criterion.__name__)
         self.root = self.grow(X, y)
     
     def grow(self, X, y, depth=0):
